@@ -44,12 +44,12 @@ type ClusteringKey struct {
 	Descending bool
 }
 
-// String takes a ClusteringKey and returns "column-name ASC|DESC"
+// String takes a ClusteringKey and returns "column-name [DESC]"
 func (ck ClusteringKey) String() string {
 	if ck.Descending {
 		return ck.Name + " DESC"
 	}
-	return ck.Name + " ASC"
+	return ck.Name
 }
 
 // PrimaryKey stores information about partition keys and clustering keys
