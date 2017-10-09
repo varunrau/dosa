@@ -385,6 +385,7 @@ var (
 	doubleType     = reflect.TypeOf(float64(0.0))
 	stringType     = reflect.TypeOf("")
 	boolType       = reflect.TypeOf(true)
+	eblobType      = reflect.TypeOf(BlobRef{})
 	nullBoolType   = reflect.TypeOf((*bool)(nil))
 	nullInt32Type  = reflect.TypeOf((*int32)(nil))
 	nullInt64Type  = reflect.TypeOf((*int64)(nil))
@@ -392,6 +393,7 @@ var (
 	nullStringType = reflect.TypeOf((*string)(nil))
 	nullUUIDType   = reflect.TypeOf((*UUID)(nil))
 	nullTimeType   = reflect.TypeOf((*time.Time)(nil))
+	eBlobType      = reflect.TypeOf(BlobRef{})
 )
 
 func typify(f reflect.Type) (Type, bool, error) {
@@ -426,6 +428,8 @@ func typify(f reflect.Type) (Type, bool, error) {
 		return String, true, nil
 	case nullBoolType:
 		return Bool, true, nil
+	case eBlobType:
+		return EBlob, false, nil
 	}
 
 	return Invalid, true, fmt.Errorf("Invalid type %v", f)

@@ -57,6 +57,9 @@ const (
 
 	// Bool is a bool type
 	Bool
+
+	// EBlob is an external blob type
+	EBlob
 )
 
 // UUID stores a string format of uuid.
@@ -106,6 +109,8 @@ func FromString(s string) Type {
 		return Timestamp
 	case Bool.String():
 		return Bool
+	case EBlob.String():
+		return EBlob
 	default:
 		return Invalid
 	}
