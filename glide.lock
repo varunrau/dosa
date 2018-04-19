@@ -1,5 +1,5 @@
-hash: 8b504c7412567ab097019fc80fff8dc43647b3247180549699dcadd3d57244e8
-updated: 2018-04-06T14:54:41.617824-07:00
+hash: 6842fafacfb2c4e911993bb18c0e3bdf8bc4fc7813a607e98477bd8ad78da0ad
+updated: 2018-04-18T17:34:10.403910919-07:00
 imports:
 - name: github.com/beorn7/perks
   version: 4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9
@@ -77,7 +77,7 @@ imports:
   - nfs
   - xfs
 - name: github.com/satori/go.uuid
-  version: f58768cc1a7a7e77a3bd49e98cdd21419399b6a3
+  version: 36e9d2ebbde5e3f13ab2e25625fd453271d6522e
 - name: github.com/uber-go/atomic
   version: 8474b86a5a6f79c443ce4b2992817ff32cf208b8
   subpackages:
@@ -162,7 +162,7 @@ imports:
   - yarpcconfig
   - yarpcerrors
 - name: go.uber.org/zap
-  version: 35aad584952c3e7020db7b839f6b102de6271f89
+  version: eeedf312bc6c57391d84767a4cd413f02a917974
   subpackages:
   - buffer
   - internal/bufferpool
@@ -170,7 +170,7 @@ imports:
   - internal/exit
   - zapcore
 - name: golang.org/x/net
-  version: b3c676e531a6dc479fa1b35ac961c13f5e2b4d2e
+  version: d41e8174641f662c5a2d1c7a5f9e828788eb8706
   subpackages:
   - bpf
   - context
